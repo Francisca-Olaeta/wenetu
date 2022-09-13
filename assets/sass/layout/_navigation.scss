@@ -1,0 +1,9 @@
+.navbar{
+    &__img{
+        padding-left: 2.625rem;
+    }
+    .navbar-collapse{
+        padding-right: 3rem;
+        @include text-style($text-color-dark, 1rem, 700)
+    }
+}

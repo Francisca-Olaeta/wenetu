@@ -1,0 +1,14 @@
+.bottom-text{
+    height: 10.3125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0rem 4.3125rem 0rem;
+    &__p{
+        width: 58.125rem;
+        @include text-style($text-color-lighter, 1rem, 400);
+        text-align: justify;
+
+    }
+
+}

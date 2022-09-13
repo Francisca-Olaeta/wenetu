@@ -1,0 +1,22 @@
+.footer{
+    height: 13.5625rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $custom-dark;
+    justify-content: center;
+    align-items: center;
+    &__img{
+        width: 18rem;
+        margin: 0rem;
+    }
+    &__line{
+        width: 52.75rem;
+        border-top: solid 1px #FFF;
+        margin: 0rem;
+    }
+    &__web{
+        margin: 1.0625rem 0rem 1.1875rem 0rem;
+        text-decoration: none;
+        @include text-style(#FFF, 1rem, 400);
+    }
+}

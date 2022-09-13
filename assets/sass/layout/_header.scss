@@ -1,0 +1,57 @@
+.breadcrumb{
+    margin-bottom: 10rem;
+    height: 2.8125rem;
+
+    &__list{
+        padding: 0rem;
+        margin: 0rem;
+    }
+    &__item, &__prepend{
+        padding-right: 0.3125rem;
+        @include text-style($text-color-dark, 0.875rem, 400);
+    }
+    &__item--light{
+        @include text-style($text-color-light, 0.875rem, 400);
+    }
+    &__item--bold{
+        @include text-style($text-color-dark, 1rem, 700);
+    }
+    &__link{
+        text-decoration: none;
+        color: $text-color-dark;
+    }
+}
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-main-text{
+    width: 49.4375rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    &__title{
+        @include title-h2($text-color-dark);
+        margin: 2.625rem 0rem 0.8125rem 0rem;
+    }
+    &__subtitle{
+        @include text-style($text-color-dark, 1rem, 400);
+        margin-bottom: 2.5rem;
+    }
+}
+
+.header-buttons{
+    width: 16.25rem;
+    height: 6.4375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line{
+  margin: 0rem;
+    opacity: 100%;
+    color: #DEE2E6;
+}

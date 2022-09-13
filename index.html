@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Wenetu</title>
+    <!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <!--Navbar------------------------------------------------------------------------------------------------------->
+    <navbar>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid p-0">
+              <img class="navbar-brand navbar__img" src="assets/img/logo-navbar.png" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Cotiza</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Cotizaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Leads</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Departamentos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Redigital
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </navbar>
+    <!---------------------------------------------------------------------------------------------------------------->
+
+    <div class="container-fluid">
+        <div class="container main-container">
+
+            <!--Header-------------------------------------------------------------------------------------------------------->
+                <header class="header">
+                    <!--Breadcrumbs-->
+                    <nav class="justify-content-between align-content-center breadcrumb" aria-label="breadcrumb">
+                        <!--Inicio y número de cotización realizada-->
+                        <ol class="breadcrumb__list d-flex justify-content-start">
+                        <i class="breadcrumb__prepend bi bi-house-fill"></i>
+                          <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Inicio </a>/</li>
+                          <li class="breadcrumb__item--light active" aria-current="page"> Cotización Realizada: <span id="quotationNumber">42</span></li>
+                        </ol>
+        
+                        <!--Valor UF-->
+                        <ol class="breadcrumb__list">
+                            <li class="breadcrumb__item--bold active" aria-current="page">UF: $28.744,18<span id="uf"></span></li>
+                        </ol>
+                    </nav>
+                    <!--Sección nuestros ejecutivos revisarán la información para tomar contacto con usted-------->
+                        <section class="header-main">
+                            <div class="header-main-text col-9">
+                                <h2 class="header-main-text__title">Nuestros ejecutivos revisarán la información para tomar
+                                    contacto con usted.</h2>
+                                    <p class="header-main-text__subtitle">Recuerde que si quiere ver otra unidad presione el botón volver a cotizar.</p>
+                            </div>
+                            <div class="header-buttons col-3 align-items-end">
+                                <button type="submit" class="btn btn-custom btn-outline-custom-info text-uppercase">Volver a Cotizar</button>
+                                <button type="button" class="btn btn-custom btn-custom-primary text-uppercase">Descargar PDF</button>
+                            </div>
+                        </section>
+                        <hr class="line">
+                </header>
+        
+        
+                <!--Sección principal--Section main------------------------------------------------------------------------------------>
+                <main>
+                        <!--Información de la propiedad a cotizar-->
+                        <div class="property-header d-flex">
+                            <div class="property-header__img">
+                                <img src="assets/img/logo-wnt-city.png" alt="logo-wenetu">
+                            </div>
+                            <div class="property-header__text">
+                                <h4 class="property-header__title">Solicitud de cotización en línea para:</h4>
+                                <h1 class="property-header__name">City</h1>
+                                <address class="property-header__address">4140 Parker Rd. Allentown, New Vitacura 31134, Vitacura</address>
+                            </div>
+                        </div>
+        
+                        <!--Sección de datos de la propiedad-->
+                        <section class="property-info d-flex flex-wrap justify-content-between">
+                            <div class="first-table">
+                                <h1 class="username">Estimado Joaquín</h1>
+                                <div class="table-general-section" style="width: 35.625rem">
+                                    <h4 class="username__subtitle">La propiedad cotizada corresponde a:</h4>
+                                    <table id="table-1" class="table-1 table border-top col-6">
+                                        <tbody>
+                                            <tr><th class="col-6 text-style border-end">Departamento</th><th class="col-6 text-style__light text-center">2001</th></tr>
+                                            <tr><th class="text-style border-end">Modelo</th><th class="text-style__light text-center">Tipo A</th></tr>
+                                            <tr><th class="text-style border-end">Estacionamiento</th><th class="text-style__light text-center">Incluido</th></tr>
+                                            <tr><th class="text-style border-end">Bodega</th><th class="text-style__light text-center">No</th></tr>
+                                            <tr><th class="text-style border-end">Dormitorios</th><th class="text-style__light text-center">3</th></tr>
+                                            <tr><th class="text-style border-end">Baños</th><th class="text-style__light text-center">1</th></tr>
+                                            <tr><th class="text-style border-end">Pisos</th><th class="text-style__light text-center">1</th></tr>
+                                            <tr><th class="text-style border-end">Orientación</th><th class="text-style__light text-center">Norte</th></tr>
+                                            <tr><th class="text-style border-end">Superficie Construida</th><th class="text-style__light text-center">45,00m2</th></tr>
+                                            <tr><th class="text-style border-end">Superficie Terraza</th><th class="text-style__light text-center">12.00 m2</th></tr>
+                                            <tr><th class="text-style border-end">Superficie Total</th><th class="text-style__light text-center">57,00 m2</th></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+        
+                            <!--Imagen de referencia planta depto-->
+                            <div class="property-img d-flex justify-content-end">
+                                <img src="assets/img/planta.png" alt="planta-depto">
+                            </div>
+        
+                                <!--Tabla precio del departamento-->
+                                <div class="table-price col-6 pe-3">
+                                    <h4 class="table-price__title">Precio del departamento:</h4>
+                                    <table id="table-2" class="table table-custom-primary col-6">
+                                        <tbody>
+                                            <tr><th class="col-6 text-style border-end">Valor del Departamento</th><th class="text-style__light text-center">2.800,0 UF</th></tr>
+                                            <tr class="border-bottom border-custom-primary"><th class="col-6 text-style border-end">Valor del Estacionamiento</th><th class="text-style__light text-center">Incluido</th></tr>
+                                        </tbody>
+                                        <tfoot class="col-6 table-primary border-top border-bottom border-custom-primary">
+                                            <tr><th class="col-6 text-style">Precio Final</th><th class="text-style__light text-center">2.800,0 UF</th></tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+            
+                                <!--Tabla financiamiento precio final-->
+                                <div class="table-financing col-6 ps-3">
+                                    <h4 class="table-financing__title">Financiamiento precio final:</h4>
+                                    <table id="table-3" class="table col-6">
+                                        <tbody>
+                                            <tr><th class="col-6 text-style border-end">20,0% del Pie</th><th class="text-style__light text-center">560,0 UF</th></tr>
+                                            <tr class="border-bottom border-custom-primary"><th class="col-6 text-style border-end">80,0% de Crédito hipotecario</th><th class="text-style__light text-center">2.240,0 UF</th></tr>
+                                        </tbody>
+                                        <tfoot class="col-6 table-primary border-top border-bottom border-custom-primary">
+                                            <tr><th class="col-6 text-style">100% Total</th><th class="col-6 text-style__light text-center">2.800,0 UF</th></tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+        
+        
+                            <!--Tabla simulación financiera-->
+                            <div class="table-simulacion col-12">
+                                <h4 class="table-simulacion__title">Simulación Financiera:</h4>
+                                <p class="table-simulacion__subtitle p p__oblique">UF: $28.895,48   Monto del Crédito: 2.240,0 UF (80,0%)</p>
+                                <table id="table-4" class="table-4 table table-striped">
+                                    <thead class="text-center table-dark">
+                                        <tr class="rounded-top">
+                                            <th>Años</th>
+                                            <th>Valor UF/mes</th>
+                                            <th>Valor $/mes</th>
+                                            <th>Renta Mínima Líquida</th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <th>20</th>
+                                            <th>6,9 UF</th>
+                                            <th>$198.923</th>
+                                            <th>$795.691</th>
+                                        </tr>
+                                        <tr>
+                                            <th>20</th>
+                                            <th>6,9 UF</th>
+                                            <th>$198.923</th>
+                                            <th>$795.691</th>
+                                        </tr>
+                                        <tr>
+                                            <th>20</th>
+                                            <th>6,9 UF</th>
+                                            <th>$198.923</th>
+                                            <th>$795.691</th>
+                                        </tr>
+                                        <tr>
+                                            <th>20</th>
+                                            <th>6,9 UF</th>
+                                            <th>$198.923</th>
+                                            <th>$795.691</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+        
+                            <!--Reservas-->
+                            <div class="reservas col-6">
+                                <h4 class="reservas__title">Reservas</h4>
+                                <p class="p p__lg">Valor: 500.000</p>
+                            </div>
+        
+                            <!--Notas-->
+                            <div class="notas col-6">
+                                <h4 class="notas__title">Notas:</h4>
+                                <p class="callout ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
+                            </div>
+                        </section>
+                </main>
+        
+                <!--Texto disclaimer------------------------------------------------------------------------------------------>
+                <div class="bottom-text">
+                <p class="bottom-text__p">*La información proporcionada en esta cotización es solo referencial y no constituye en ningún momento derecho alguno de exigencia de los valores y medidas publicadas. Lo anterior debido a que los valores están en constante actualización. Los cotizaciones vinculantes pueden ser obtenidas exclusivamente de manera presencial en las salas de ventas u oficinas de la inmobiliaria dueña del proyecto y/o gestor de venta.
+                </p>
+                </div>
+                        
+            </div>
+        </div>
+
+    <!--Footer-------------------------------------------------------------------------------------------------------->
+    <footer class="footer text-center">
+        <img class="footer__img" src="assets/img/logo-footer.png" alt="logo-wenetu">
+        <hr class="footer__line">
+        <a class="footer__web" href="crm.wenetu.cl">crm.wenetu.cl</a>
+    </footer>
+    
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

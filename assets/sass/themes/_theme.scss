@@ -1,0 +1,28 @@
+@import '../vendors/node_modules/bootstrap/scss/functions';
+@import '../vendors/node_modules/bootstrap/scss/variables';
+@import '../vendors/node_modules/bootstrap/scss/mixins';
+
+// Create your own map
+$custom-colors: (
+  "custom-primary": #325DAC,
+  "custom-dark": #263758,
+  "custom-info": #2CA6B8,
+  "custom-light": #E6E6E8,
+  "custom-warning": #DE792A,
+
+);
+
+$table-variants: (
+  "primary":    shift-color($custom-primary, $table-bg-scale),
+  "secondary":  shift-color($secondary, $table-bg-scale),
+  "success":    shift-color($success, $table-bg-scale),
+  "info":       shift-color($custom-info, $table-bg-scale),
+  "warning":    shift-color($custom-warning, $table-bg-scale),
+  "danger":     shift-color($danger, $table-bg-scale),
+  "light":      $custom-light,
+  "dark":       $custom-dark,
+);
+
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
